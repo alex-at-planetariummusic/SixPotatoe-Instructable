@@ -415,8 +415,8 @@ void ch4Isr() {
     riseTime = t;
   } else {
     int ch4pw = t - riseTime;
-    if (ch4pw < 1200) ch4State = 0;
-    else if (ch4pw < 1800) ch4State = 1;
+    if (ch4pw < 1400) ch4State = 0;
+    else if (ch4pw < 1600) ch4State = 1;
     else ch4State = 2;
   }
 }
